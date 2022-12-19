@@ -1,7 +1,7 @@
 import axios from "axios";
 import { stringify, parse } from "query-string";
 const getToken = () => localStorage.getItem("access_token");
-const baseURL = "http://localhost:8080/api/v1/";
+const baseURL = "https://admin-ir6z.onrender.com/";
 
 const axiosClient = axios.create({
     baseURL,
