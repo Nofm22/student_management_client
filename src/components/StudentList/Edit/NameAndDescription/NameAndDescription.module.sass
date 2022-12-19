@@ -1,0 +1,176 @@
+@import ../../../../styles/helpers
+
+.description
+    & > .field
+        &:not(:last-child)
+            margin-bottom: 32px
+            +d
+                margin-bottom: 24px
+
+.editor
+    &:not(:last-child)
+        margin-bottom: 32px
+        +d
+            margin-bottom: 24px
+.wrap
+    display: flex
+    gap: 30px
+    .scoreDetail
+        flex-basis: 1
+        width: 100%
+        .dropdownStyle
+            width: 20%
+.group
+    display: flex
+    flex-wrap: wrap
+    // align-items: flex-end
+    margin: 0 -6px -12px
+    +m
+        display: block
+        margin: 0
+    .field
+        flex: 0 0 calc(50% - 12px)
+        width: calc(50% - 12px)
+        margin: 0 6px 12px
+        +m
+            width: 100%
+            margin: 12px 0 0
+
+    h3
+        margin: 10px 0
+
+    h6
+        margin: 5px 0
+        text-transform: uppercase
+
+    p
+        font-size: 14px
+        line-height: 21px
+
+    .cardContainer
+        background-color: #231E39
+        border-radius: 5px
+        box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75)
+        color: #B3B8CD
+        padding-top: 30px
+        position: relative
+        width: 350px
+        max-width: 100%
+        text-align: center
+        .wrapInfo
+            margin-top: 30px
+            display: flex
+            justify-content: space-around
+            padding-bottom: 30px
+        .info
+            display: flex
+            justify-content: space-around
+            flex-direction: column
+        & .pro
+            color: #231E39
+            background-color: #FEBB0B
+            border-radius: 3px
+            font-size: 14px
+            font-weight: bold
+            padding: 3px 7px
+            position: absolute
+            top: 30px
+            left: 30px
+
+        & .round
+            border: 1px solid #03BFCB
+            border-radius: 50%
+            padding: 7px
+
+    button.primary
+        background-color: #03BFCB
+        border: 1px solid #03BFCB
+        border-radius: 3px
+        color: #231E39
+        font-family: Montserrat, sans-serif
+        font-weight: 500
+        padding: 10px 25px
+
+    button.primary.ghost
+        background-color: transparent
+        color: #02899C
+
+    .skills
+        background-color: #1F1A36
+        text-align: left
+        padding: 15px
+        margin-top: 30px
+
+        & ul
+            list-style-type: none
+            margin: 0
+            padding: 0
+
+        & ul li
+            border: 1px solid #2D2747
+            border-radius: 2px
+            display: inline-block
+            font-size: 12px
+            margin: 0 7px 7px 0
+            padding: 7px
+
+.buttonContainer
+    margin-top: 20px
+    display: flex
+    justify-content: flex-end
+
+$background: #efefef
+$lfs-blue: #006ac6
+$lfs-yellow: #fab700
+$lfs-grey: #75787b
+.containerTable
+    margin-top: 30px
+    .tableLatitude
+        width: 100%
+
+        thead
+            border-top: 2px solid $lfs-yellow
+            border-bottom: 2px solid $lfs-yellow
+            th
+                text-transform: uppercase
+                text-align: center
+                padding: 10px
+                color: $n3
+                border: 1px solid #F1F1F1
+
+        tbody
+            tr
+                border-bottom: 1px solid #F1F1F1
+                color: $lfs-grey
+                td
+                    text-align: center
+                    padding: 10px
+                    border: 1px solid #F1F1F1
+
+                th
+                    padding-left: 10px
+                    border: 1px solid #F1F1F1
+                    padding: 8px
+
+.currentClass
+    display: flex
+    justify-content: flex-start
+    width: 100%
+    gap: 30px
+    color: $n3
+    align-items: center
+    margin-top: 1rem
+
+    .typeClass
+        font-size: 1rem
+        .className
+            border: 1px solid #ffffff
+            align-self: center
+            font-size: 1.5rem
+            line-height: 48px
+            padding: 0 48px 0 12px
+            height: 48px
+            text-align: center
+            border-radius: 10px
+            background: $n8
+            box-shadow: inset 0 0 0 2px $n5, 0 4px 12px rgba($n8, .1)
