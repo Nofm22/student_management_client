@@ -31,10 +31,10 @@ const SignIn = () => {
         e.preventDefault();
 
         try {
-            console.log(user);
             const data = await usersServices.login(user);
-            console.log(data);
-            localStorage.setItem("access_token", data.token);
+            if (data) {
+                localStorage.setItem("access_token", data.token);
+            }
             navigate("/home");
         } catch (e) {
             addNotification("Username or password is incorrect.", 3);
