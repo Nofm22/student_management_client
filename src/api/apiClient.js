@@ -18,8 +18,8 @@ axiosClient.interceptors.request.use(async (config) => {
             "Content-Type": "application/json",
             authorization: `Bearer ${getToken()}`,
             "Access-Control-Allow-Origin": "*",
-            // "Access-Control-Allow-Headers":
-            //     "Origin, Content-Type, X-Auth-Token",
+            "Access-Control-Allow-Headers":
+                "Origin, Content-Type, X-Auth-Token",
             "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS",
         },
     };
