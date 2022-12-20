@@ -15,8 +15,9 @@ const Page = ({ wide, children, title }) => {
         async function auth() {
             try {
                 const { data } = await authApi.verify();
-
-                setData(data);
+                if (data) {
+                    setData(data);
+                }
             } catch (e) {
                 navigate("/");
                 console.log(e);
