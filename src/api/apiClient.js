@@ -1,7 +1,7 @@
 import axios from "axios";
 import { stringify, parse } from "query-string";
 const getToken = () => localStorage.getItem("access_token");
-const baseURL = "https://admin-ir6z.onrender.com/";
+const baseURL = "https://cors-anywhere.herokuapp.com/https://admin-ir6z.onrender.com/";
 
 const axiosClient = axios.create({
     baseURL,
